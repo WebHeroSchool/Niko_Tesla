@@ -1,0 +1,51 @@
+.model, .menu {
+	font: 600 15px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
+}
+
+.main__title {
+	font: 600 90px/110px Montserrat-SemiBold, arial, helvetica, sans-serif;
+}
+
+.main__subtitle, .upper__subtitle, .lower__subtitle {
+	font: 500 15px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
+}
+
+.main-speed__title_number, .main-distance__title_number, .display__title_number, .space__title_number {
+	font: 600 35px/43px Montserrat-SemiBold, arial, helvetica, sans-serif;
+}
+
+.main-speed__title_text, .main-distance__title_text, .display__title_text, .space__title_text {
+	font: 600 20px/24px Montserrat-SemiBold, arial, helvetica, sans-serif;
+}
+
+.main-speed__subtitle, .main-distance__subtitle, .display__subtitle, .functionality__subtitle {
+	font: 400 12px/15px Montserrat-SemiBold, arial, helvetica, sans-serif;
+}
+
+.test-drive__link, .main-button, .description__link, .description__button {
+	font: 700 13px/16px Montserrat-SemiBold, arial, helvetica, sans-serif;	
+}
+
+.upper__title, .lower__title, .protection-title, .lower__text_stars {
+	font: 600 30px/37px Montserrat-SemiBold, arial, helvetica, sans-serif;
+}
+
+.functionality__title {
+	font: 600 20px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
+}
+
+.protection {
+	font: 700 17px/21px Montserrat-SemiBold, arial, helvetica, sans-serif;
+}
+
+.protection__item_dop {
+	font: 700 10px/12px Montserrat-SemiBold, arial, helvetica, sans-serif;
+}
+
+.lower__text_number {
+	font: 600 50px/61px Montserrat-SemiBold, arial, helvetica, sans-serif;
+}
+
+.lower__text_safety {
+	font: 600 25px/30px Montserrat-SemiBold, arial, helvetica, sans-serif;
+}
