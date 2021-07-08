@@ -26,7 +26,7 @@
 	font: 700 13px/16px Montserrat-Bold, arial, helvetica, sans-serif;	
 }
 
-.upper__title, .lower__title, .protection-title, .lower__stars {
+.upper__title, .lower__title, .lower__protection, .lower-text__stars {
 	font: 600 30px/37px Montserrat-SemiBold, arial, helvetica, sans-serif;
 }
 
@@ -42,10 +42,10 @@
 	font: 700 10px/12px Montserrat-Bold, arial, helvetica, sans-serif;
 }
 
-.lower__number {
+.lower-text__number {
 	font: 600 50px/61px Montserrat-SemiBold, arial, helvetica, sans-serif;
 }
 
-.lower__safety {
+.lower-text__safety {
 	font: 600 25px/30px Montserrat-SemiBold, arial, helvetica, sans-serif;
 }
