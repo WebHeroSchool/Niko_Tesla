@@ -55,6 +55,7 @@ body {
 	font: 600 25px/30px Montserrat-SemiBold, arial, helvetica, sans-serif;
 }
 
+/*////////header и первая секция\\\\\\\\\*/
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -320,3 +321,115 @@ body {
 	color: white;
 	background-color: #e51937;
  }
+
+.arrow {
+	background: url(img/Vector.svg) no-repeat;
+	width: 35px;
+	height: 20px;
+	margin-top: -46px;
+	cursor: pointer;
+}
+/*////////header и первая секция\\\\\\\\\*/
+/*////////Адаптив: header и первая секция\\\\\\\\\*/
+
+@media(max-width: 1299px) {
+	.model, .menu {
+		display: none;
+	}
+
+	.btn {
+		left: 0;
+		top: 0
+	}
+}
+
+@media(max-width: 1130px) {
+	.main-speed {
+    margin: -48px 0 0 -195px;
+  }
+
+  .links {
+    margin: 0 -170px 0 -30px;
+	}
+
+	.main__red-car {
+		background-size: contain;
+	}
+
+	.main {
+		background-position-y: 10%;
+	}
+}
+
+@media(max-width: 875px) {
+	.main__pros {
+		margin-top: -82px;
+	}
+}
+
+@media(max-width: 768px) {
+	.header {
+		margin: 0 0 58px 35px;
+	}
+
+	.logo {
+		background-position-x: -20px;
+	}
+
+	.btn {
+    left: -13px;
+    top: -1px;
+    width: 36px;
+	}
+
+	.btn > span, .btn > span::after, .btn > span::before {
+		height: 4px;
+	}
+
+	.btn > span::before {
+    top: -10px;
+	}
+
+	.btn > span::after {
+    top: 10px;
+	}
+
+	.main__title {
+    margin: 21px 0 0 0;
+	}
+
+	.main {
+		background: url(img/tesla_ipad.svg) no-repeat;
+		background-position-y: 20%;
+	}
+
+	.main__red-car {
+		background: url(img/car_ipad.svg) no-repeat;
+		background-position: 50% 65%;
+	}
+
+	.speed-img{
+		background-position: 1px 8px;
+    background-size: 77px;
+    width: 101px;
+    height: 91px;
+	}
+
+	.main-speed {
+    margin: -2px 0 44px -70px;
+	}
+
+	.main-speed__number {
+		font: 600 50px/61px Montserrat-SemiBold, arial, helvetica, sans-serif;
+		margin: -45px 0 0 -8px;
+	}
+
+	.links {
+    margin: 210px 17px 0px -436px;
+    height: 88px;
+	}
+
+	.arrow {
+		margin-top: 28px;
+	}
+}
