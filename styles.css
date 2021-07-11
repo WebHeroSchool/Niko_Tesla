@@ -400,7 +400,8 @@ body {
 
 	.main {
 		background: url(img/tesla_ipad.svg) no-repeat;
-		background-position-y: 20%;
+		background-position: 50% 20%;
+		background-size: contain;
 	}
 
 	.main__red-car {
@@ -422,14 +423,188 @@ body {
 	.main-speed__number {
 		font: 600 50px/61px Montserrat-SemiBold, arial, helvetica, sans-serif;
 		margin: -45px 0 0 -8px;
+		position: relative;
+	}
+
+	.main-speed__text {
+		position: absolute;
+		margin: 22px 0 0 11px;
+	}
+
+	.main-speed__subtitle {
+    margin: 27px 0 0 -71px;
+	}
+
+	.main-distance {
+    height: 150px;
+    margin: 0 -356px 57px 0;
+	}
+
+	.distance-img {
+		background: url(img/Road-icon-ipad.svg) no-repeat;
+		background-position: 16% 12px;
+		height: 100px;
+	}
+
+	.main-distance__number {
+		font: 600 50px/60px Montserrat-SemiBold, arial, helvetica, sans-serif;
+		margin: -36px 0 0 -3px;
+		position: relative;
+	}
+
+	.main-distance__text {
+		position: absolute;
+		margin: 21px 0 0 10px;
+	}
+
+	.main-distance__subtitle {
+    margin: 55px -25px 17px -88px;
 	}
 
 	.links {
-    margin: 210px 17px 0px -436px;
+    margin: 210px -30px 0px -194px;
     height: 88px;
+    width: 500px;
 	}
+
+	.test-drive {
+		background: url(img/Test-drive-red.svg) no-repeat;
+		margin: -2px 0 0px 80px;
+		width: 164px;
+	}
+
+	.main-button {
+		font: 700 16px/16px Montserrat-Bold, arial, helvetica, sans-serif;
+		width: 216px;
+    height: 51px;
+    margin: -33px 0px 0 34px;
+    background-color: #e51937;
+    color: #fefefe;
+	}
+
+	.main-button:hover {
+		color: #e51937;
+		background-color: #fefefe;
+  }
 
 	.arrow {
 		margin-top: 28px;
 	}
+}
+
+@media(max-width: 670px) {
+	.main__red-car {
+		background-size: 600px;
+		background-position: 50% 58%;
+	}
+
+	.links {
+		margin: 210px -90px 0 -194px;
+	}
+}
+
+@media(max-width: 580px) {
+	.main__red-car {
+    background-size: 540px;
+    background-position: 50% 38%;
+	}
+
+	.main__pros {
+    margin-top: -141px;
+	}
+}
+
+@media(max-width: 500px) {
+	.main__pros {
+		margin: -276px 0 0 -57px;
+	}
+
+	.main__red-car {
+    background-size: 430px;
+    background-position: 50% 16%;
+	}
+
+	.main__title {
+		margin: 0;
+	}
+
+	.links {
+    margin: 210px -137px 0 -129px;
+	}
+}
+
+@media(max-width: 425px) {
+	.main__title {
+    font: 600 75px/110px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.main__subtitle {
+		font: 500 13px/18px Montserrat-Medium, arial, helvetica, sans-serif;
+		margin: -18px 0 0 0;
+	}
+
+	.main__red-car {
+    background-size: 370px;
+	}
+
+	.speed-img {
+		background: url(img/speed-mobile.svg) no-repeat;
+		background-position: 50% 15%;
+	}
+
+	.main-speed__number {
+    font: 600 27px/33px Montserrat-SemiBold, arial, helvetica, sans-serif;
+    margin: -51px 0 0 -22px;
+  }
+
+  .main-speed__text {
+    font: 600 15px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
+    margin: 10px 0 0 3px;
+  }
+
+  .main-speed__subtitle {
+    font: 400 10px/12px Montserrat-Regular, arial, helvetica, sans-serif;
+    margin: -2px 0 0 -38px;
+	}
+
+	.distance-img {
+		background: url(img/distance-mobile.svg) no-repeat;
+		margin: 33px 0 0 0;
+	}
+
+	.main-distance__number {
+		font: 600 27px/33px Montserrat-SemiBold, arial, helvetica, sans-serif;
+		margin: -40px 0 0 -34px;
+	}
+
+	.main-distance__text {
+		font: 600 15px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
+		margin: 7px 0 0 3px;
+	}
+
+	.main-distance__subtitle {
+		font: 400 10px/12px Montserrat-Regular, arial, helvetica, sans-serif;
+		margin: 22px -25px 17px -47px;
+	}
+
+	.links {
+    margin: 152px -137px 0 -129px;
+	}
+
+	.main-button {
+    font: 700 13px/18px Montserrat-Bold, arial, helvetica, sans-serif;
+    width: 160px;
+    height: 40px;
+    margin: -42px 0px 0 22px;
+  }
+
+	.test-drive {
+		background: url(img/test-mobile.svg) no-repeat;
+		margin: -2px 0 0px 84px;
+	}
+
+	.arrow {
+    margin-top: -12px;
+	}
+
 }
