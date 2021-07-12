@@ -511,6 +511,11 @@ body {
 
 	.main__pros {
     margin-top: -141px;
+    margin-left: -36px;
+	}
+
+	.main-distance {
+    margin: 0 -313px 57px 0;
 	}
 }
 
@@ -606,5 +611,119 @@ body {
 	.arrow {
     margin-top: -12px;
 	}
+}
 
+@media(max-width: 375px) {
+	.main-distance {
+		width: 97px;
+	}
+
+	.btn {
+    left: -30px;
+    top: -23px;
+    width: 24px;
+	}
+
+	.btn > span, .btn > span::after, .btn > span::before {
+		height: 2px;
+	}
+
+	.btn > span::before {
+    top: -7px;
+	}
+
+	.btn > span::after {
+    top: 7px;
+	}
+
+	.logo {
+		background: url(img/logo-mobile.svg) no-repeat;
+		background-position: -33% -20%;
+    margin: 0 0 0 -24px;
+	}
+
+	.main__title {
+    font: 600 50px/61px Montserrat-SemiBold, arial, helvetica, sans-serif;
+    margin-top: -55px;
+  }
+
+  .main__subtitle {
+    font: 500 10px/12px Montserrat-Medium, arial, helvetica, sans-serif;
+    margin: -3px 0 0 0;
+	}
+
+	.main {
+		background: url(img/Tesla-mobile.svg) no-repeat;
+		background-size: contain;
+    background-position-y: 7%;
+	}
+
+	.main__red-car {
+		background: url(img/car-mobile.svg) no-repeat;
+		background-size: 95%;
+    background-position: 50% 17%;
+	}
+
+	.main__pros {
+    margin: -273px 0 0 -36px;
+	}
+
+	.main-speed {
+		margin: 13px 0 44px -67px;
+	}
+
+	.speed-img {
+		background-position: 45% 15%;
+	}
+
+	.main-speed__number {
+		margin: -54px 0 0 -22px;
+	}
+
+	.main-speed__text {
+		margin: 12px 0 0 9px;
+	}
+
+	.main-speed__subtitle {
+		margin: -13px 0 0 -38px;
+	}
+
+	.main-distance {
+    margin: 0 -209px 45px 0;
+	}
+
+	.distance-img {
+    margin: 26px 0 0 -4px;
+	}
+
+	.main-distance__number {
+    margin: -42px 0 0 -30px;
+	}
+
+	.main-distance__text{
+		margin: 12px 0 0 8px;
+	}
+
+	.main-distance__subtitle {
+    margin: 20px -25px 17px -47px;
+	}
+
+	.links {
+  	margin: 138px -80px 0 -125px;
+	}
+
+	.test-drive {
+		margin: -2px -43px 0px 84px;
+	}
+
+	.main-button {
+		width: 155px;
+    height: 35px;
+    margin: -43px 0px 0 22px;
+	}
+
+	.arrow {
+		margin-top: -14px;
+	  margin-left: 3px;
+	}
 }
