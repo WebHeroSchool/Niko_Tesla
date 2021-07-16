@@ -1,3 +1,8 @@
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 .model, .menu {
 	font: 600 15px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
 }
@@ -48,4 +53,836 @@
 
 .lower-text__safety {
 	font: 600 25px/30px Montserrat-SemiBold, arial, helvetica, sans-serif;
+}
+
+/*////////header и первая секция\\\\\\\\\*/
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 58px 43px;
+	padding: 13px 0 0 0;
+	width: 93%;
+}
+
+.logo {
+	width: 166px;
+	height: 75px;
+	background: top 23px right 8px no-repeat url(img/logo.svg);
+	background-position: center;
+}
+
+.model {
+	display: inline-block;
+	margin-right: 175px;
+}
+
+.model__item {
+	margin-right: 42px;
+	text-decoration: none;
+	color: black;
+	position: relative;
+	display: inline-block;
+	transition: color .3s ease-in-out;
+	transition-duration: .2s;
+}
+
+.model__item_2 {
+	margin-right: 20px;
+}
+
+.model__item_active {
+	color: #e51937;
+	margin-right: 59px;
+}
+
+.model__item:hover {
+	color: #e51937;
+}
+
+.model__item_active::after {
+	position: absolute;
+	display: block;
+	content: '';
+	left: 0;
+	width: 100%;
+	bottom: -6px;
+	height: 2px;
+	background: #e51937;
+	transition: opacity .5s, width .5s;
+	border-radius: 0 0 100px 100px;
+}
+
+.model__item::before {
+	position: absolute;
+	content: '';
+	background: #e51937;
+	width: 100%;
+  height: 2px;
+  bottom: -6px;
+  transform: scaleX(0);
+  border-radius: 0 0 100px 100px;
+}
+
+.model__item::after, .model__item::before {
+	content: '';
+  position: absolute;
+  transition: transform 0.5s ease-in-out;
+  left: 0;
+}
+
+.model__item:hover::before {
+	transform: scaleX(1);
+  border-radius: 0 0 100px 100px;
+}
+
+.menu {
+	display: inline-block;
+	margin-right: 34px;
+}
+
+.menu__item {
+	text-decoration: none;
+	color: black;
+	margin-right: 24px;
+}
+
+#toggle {
+	display: none;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	position: relative;
+	left: 888px;
+	top: 8px;
+	width: 23px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.btn > span, .btn > span::after, .btn > span::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #e51937;
+	border-radius: 0 0 100px 100px;
+	transition-duration: .2s;
+}
+
+.btn > span::after {
+	content: '';
+	top: 8px;
+}
+
+.btn > span::before {
+	content: '';
+	top: -8px;
+}
+
+#toggle:checked ~ .btn > span {
+  transform: rotate(45deg);
+}
+
+#toggle:checked ~ .btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#toggle:checked ~ .btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background: url(img/main.svg) no-repeat;
+	background-size: contain;
+	margin-top: -12px;
+}
+
+.main__red-car {
+	background: url(img/main_car.svg) no-repeat;
+	width: 100%;
+	height: 461px;
+	background-position: 42% 24px;
+}
+
+.main__title {
+	margin: -1px 0 0 0;
+}
+
+.main__subtitle {
+	margin: -8px 0 0 0;
+}
+
+.main__pros {
+	display: flex;
+	justify-content: space-between;
+	width: 47%;
+	align-items: center;
+	margin-top: -22px;
+}
+
+.main-speed {
+	display: flex;
+  align-items: center;
+  width: 268px;
+  height: 56px;
+  margin: -48px 0 0 -81px;
+}
+
+.speed-img {
+	display: flex;
+	background: url(img/Speed.svg) no-repeat;
+	background-position: 16px 30px;
+  background-size: 55px;
+  width: 81px;
+  height: 64px;
+}
+
+.main-speed__number {
+	margin: 17px 0 0px -1px;
+}
+
+.main-speed__text {
+	margin: 0 0 0 8px;
+}
+
+.main-speed__subtitle {
+	margin: 70px 0 0 -94px;
+}
+
+.main-distance {
+	display: flex;
+	align-items: center;
+	width: 200px;
+	height: 200px;
+	margin: 0 0 0 -88px;
+}
+
+.distance-img {
+	display: flex;
+	background: url(img/Roadicon.svg) no-repeat;
+	background-position: -1px 0;
+	background-size: 41px;
+	width: 67px;
+	height: 63px;
+}
+
+.main-distance__number {
+	margin: -31px 0 0 -21px; 
+}
+
+.main-distance__text {
+	margin: 0 0 0 6px;
+}
+
+.main-distance__subtitle {
+	margin: 37px -25px 17px -98px; 
+ }
+
+.links {
+ 	display: flex;
+ 	align-items: center;
+ 	width: 333px;
+ 	height: 200px;
+ 	margin: 0 -68px 0 -30px;
+ }
+
+.test-drive {
+ 	background: url(img/Testdrive.svg) no-repeat;
+ 	background-position: 5px 12px;
+	background-size: 125px;
+	width: 130px;
+	height: 63px;
+	cursor: pointer;
+ }
+
+.main-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ 	color: #e51937;
+ 	border: 2px solid #e51937;
+ 	width: 156px;
+  height: 36px;
+  margin: -16px 0px 0 37px;
+  transition: background-color, color .8s;
+  cursor: pointer;
+ }
+
+.main-button:hover {
+	color: white;
+	background-color: #e51937;
+ }
+
+.arrow {
+	background: url(img/Vector.svg) no-repeat;
+	width: 35px;
+	height: 20px;
+	margin-top: -46px;
+	cursor: pointer;
+}
+/*////////header и первая секция\\\\\\\\\*/
+/*////////Адаптив: header и первая секция\\\\\\\\\*/
+
+@media(max-width: 1200px) {
+	.btn {
+		left: 800px;
+	}
+
+	.model {
+		margin-right: 83px;
+	}
+}
+
+@media(max-width: 1136px) {
+	.main-speed {
+    margin: -48px 0 0 -195px;
+  }
+
+  .links {
+    margin: 0 -170px 0 -30px;
+	}
+
+	.main__red-car {
+		background-size: contain;
+	}
+
+	.main {
+		background-position-y: 10%;
+	}
+}
+
+@media(max-width: 875px) {
+	.main__pros {
+		margin-top: -82px;
+	}
+}
+
+@media(max-width: 1070px) {
+	.model, .menu {
+    font: 600 12px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.btn {
+		left: 704px;
+	}
+}
+
+@media(max-width: 968px) {
+	.model{
+		margin-right: 5px;
+	}
+
+	.btn {
+		left: 624px;
+	}
+}
+
+@media(max-width: 885px) {
+	.model__item {
+    margin-right: 29px;
+  }
+
+  .model__item_active {
+    margin-right: 29px;
+	}
+
+	.btn {
+    left: 572px;
+   }
+}
+
+@media(max-width: 844px) {
+	.model__item {
+    margin-right: 22px;
+	}
+
+	.btn {
+		left: 529px;
+	}
+}
+
+@media(max-width: 768px) {
+	.model, .menu {
+		display: none;
+	}
+
+	.btn {
+		left: 0;
+		top: 0
+	}
+
+	.header {
+		margin: 0 0 58px 35px;
+	}
+
+	.logo {
+		background-position-x: -20px;
+	}
+
+	.btn {
+    left: -13px;
+    top: -1px;
+    width: 36px;
+	}
+
+	.btn > span, .btn > span::after, .btn > span::before {
+		height: 4px;
+	}
+
+	.btn > span::before {
+    top: -10px;
+	}
+
+	.btn > span::after {
+    top: 10px;
+	}
+
+	.main__title {
+    margin: 21px 0 0 0;
+	}
+
+	.main {
+		background: url(img/tesla_ipad.svg) no-repeat;
+		background-position: 50% 20%;
+		background-size: contain;
+	}
+
+	.main__red-car {
+		background: url(img/car_ipad.svg) no-repeat;
+		background-position: 50% 65%;
+	}
+
+	.speed-img{
+		background-position: 1px 8px;
+    background-size: 77px;
+    width: 101px;
+    height: 91px;
+	}
+
+	.main-speed {
+    margin: -2px 0 44px -70px;
+	}
+
+	.main-speed__number {
+		font: 600 50px/61px Montserrat-SemiBold, arial, helvetica, sans-serif;
+		margin: -45px 0 0 -8px;
+		position: relative;
+	}
+
+	.main-speed__text {
+		position: absolute;
+		margin: 22px 0 0 11px;
+	}
+
+	.main-speed__subtitle {
+    margin: 27px 0 0 -71px;
+	}
+
+	.main-distance {
+    height: 150px;
+    margin: 0 -356px 57px 0;
+	}
+
+	.distance-img {
+		background: url(img/Road-icon-ipad.svg) no-repeat;
+		background-position: 16% 12px;
+		height: 100px;
+	}
+
+	.main-distance__number {
+		font: 600 50px/60px Montserrat-SemiBold, arial, helvetica, sans-serif;
+		margin: -36px 0 0 -3px;
+		position: relative;
+	}
+
+	.main-distance__text {
+		position: absolute;
+		margin: 21px 0 0 10px;
+	}
+
+	.main-distance__subtitle {
+    margin: 55px -25px 17px -88px;
+	}
+
+	.links {
+    margin: 210px -30px 0px -194px;
+    height: 88px;
+    width: 500px;
+	}
+
+	.test-drive {
+		background: url(img/Test-drive-red.svg) no-repeat;
+		margin: -2px 0 0px 80px;
+		width: 164px;
+	}
+
+	.main-button {
+		font: 700 16px/16px Montserrat-Bold, arial, helvetica, sans-serif;
+		width: 216px;
+    height: 51px;
+    margin: -33px 0px 0 34px;
+    background-color: #e51937;
+    color: #fefefe;
+	}
+
+	.main-button:hover {
+		color: #e51937;
+		background-color: #fefefe;
+  }
+
+	.arrow {
+		margin-top: 28px;
+	}
+}
+
+@media(max-width: 670px) {
+	.main__red-car {
+		background-size: 600px;
+		background-position: 50% 58%;
+	}
+
+	.links {
+		margin: 210px -90px 0 -194px;
+	}
+
+	.main__pros {
+		margin-right: 18px;
+	}
+
+	.test-drive {
+		margin: -2px 0 0px 53px;
+    width: 180px;
+   background-position-x: 6px;
+	}
+}
+
+@media(max-width: 632px) {
+	.main__pros {
+    margin-right: 43px;
+	}
+}
+
+@media(max-width: 585px) {
+	.main__red-car {
+    background-size: 540px;
+    background-position: 50% 38%;
+	}
+
+	.main__pros {
+    margin-top: -141px;
+    margin-left: -36px;
+	}
+
+	.main-distance {
+    margin: 0 -313px 57px 0;
+	}
+
+	.links {
+    margin: 210px -136px 0 -194px;
+	}
+}
+
+@media(max-width: 542px) {
+	.main__pros {
+		margin: -276px 0 0 -57px;
+	}
+
+	.main__red-car {
+    background-size: 430px;
+    background-position: 50% 16%;
+	}
+
+	.main__title {
+		margin: 0;
+	}
+
+	.links {
+    margin: 210px -143px 0 -185px;
+	}
+}
+
+@media(max-width: 458px) {
+	.links {
+		margin: 210px -136px 0 -170px;
+	}
+
+	.main__title {
+    font: 600 72px/97px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.main__subtitle {
+		font: 500 14px/18px Montserrat-Medium, arial, helvetica, sans-serif;
+	}
+
+	.main-speed__subtitle {
+    margin: 27px 0 0 -61px;
+	}
+
+	.main-speed__number {
+		font: 600 43px/61px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.main-distance__number {
+    font: 600 43px/60px Montserrat-SemiBold, arial, helvetica, sans-serif;
+  }
+
+  .main-distance__subtitle {
+    margin: 55px -25px 17px -75px;
+	}
+
+	.main-button {
+    font: 700 14px/16px Montserrat-Bold, arial, helvetica, sans-serif;
+    width: 192px;
+    height: 46px;
+    margin: -33px 25px 0 17px;
+  }
+}
+
+
+@media(max-width: 425px) {
+	.main__title {
+    font: 600 75px/110px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.main__subtitle {
+		font: 500 13px/18px Montserrat-Medium, arial, helvetica, sans-serif;
+		margin: -18px 0 0 0;
+	}
+
+	.main__red-car {
+    background-size: 370px;
+	}
+
+	.speed-img {
+		background: url(img/speed-mobile.svg) no-repeat;
+		background-position: 50% 15%;
+	}
+
+	.main-speed__number {
+    font: 600 27px/33px Montserrat-SemiBold, arial, helvetica, sans-serif;
+    margin: -51px 0 0 -22px;
+  }
+
+  .main-speed__text {
+    font: 600 15px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
+    margin: 10px 0 0 3px;
+  }
+
+  .main-speed__subtitle {
+    font: 400 10px/12px Montserrat-Regular, arial, helvetica, sans-serif;
+    margin: -2px 0 0 -38px;
+	}
+
+	.distance-img {
+		background: url(img/distance-mobile.svg) no-repeat;
+		margin: 33px 0 0 0;
+	}
+
+	.main-distance__number {
+		font: 600 27px/33px Montserrat-SemiBold, arial, helvetica, sans-serif;
+		margin: -40px 0 0 -34px;
+	}
+
+	.main-distance__text {
+		font: 600 15px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
+		margin: 7px 0 0 3px;
+	}
+
+	.main-distance__subtitle {
+		font: 400 10px/12px Montserrat-Regular, arial, helvetica, sans-serif;
+		margin: 22px -25px 17px -47px;
+	}
+
+	.links {
+    margin: 152px -112px 0 -158px;
+	}
+
+	.main-button {
+    font: 700 13px/18px Montserrat-Bold, arial, helvetica, sans-serif;
+    width: 148px;
+    height: 35px;
+    margin: -45px 0px 0 36px;
+  }
+
+	.test-drive {
+		background: url(img/test-mobile.svg) no-repeat;
+		margin: -2px 0 0px 84px;
+		background-position-x: 25px;
+	}
+
+	.main-speed {
+    margin: 21px 0 44px -60px;
+  }
+
+  .main-distance {
+    margin: 24px -348px 57px 0;
+	}
+
+	.arrow {
+    margin-top: -12px;
+	}
+}
+
+@media(max-width: 385px) {
+	.links {
+    margin: 152px -112px 0 -135px;
+	}
+
+	.main-button {
+		margin: -45px 0px 0 12px;
+	}
+}
+
+@media(max-width: 375px) {
+	.main-distance {
+		width: 97px;
+	}
+
+	.btn {
+    left: -30px;
+    top: -23px;
+    width: 24px;
+	}
+
+	.btn > span, .btn > span::after, .btn > span::before {
+		height: 2px;
+	}
+
+	.btn > span::before {
+    top: -7px;
+	}
+
+	.btn > span::after {
+    top: 7px;
+	}
+
+	.logo {
+		background: url(img/logo-mobile.svg) no-repeat;
+		background-position: -33% -20%;
+    margin: 0 0 0 -24px;
+	}
+
+	.main__title {
+    font: 600 50px/61px Montserrat-SemiBold, arial, helvetica, sans-serif;
+    margin-top: -55px;
+  }
+
+  .main__subtitle {
+    font: 500 10px/12px Montserrat-Medium, arial, helvetica, sans-serif;
+    margin: -3px 0 0 0;
+	}
+
+	.main {
+		background: url(img/Tesla-mobile.svg) no-repeat;
+		background-size: contain;
+    background-position-y: 7%;
+	}
+
+	.main__red-car {
+		background: url(img/car-mobile.svg) no-repeat;
+		background-size: 95%;
+    background-position: 50% 17%;
+	}
+
+	.main__pros {
+    margin: -273px 0 0 -36px;
+	}
+
+	.main-speed {
+		margin: 13px 0 44px -67px;
+	}
+
+	.speed-img {
+		background-position: 45% 15%;
+	}
+
+	.main-speed__number {
+		margin: -54px 0 0 -22px;
+	}
+
+	.main-speed__text {
+		margin: 12px 0 0 9px;
+	}
+
+	.main-speed__subtitle {
+		margin: -13px 0 0 -38px;
+	}
+
+	.main-distance {
+    margin: 0 -209px 45px 0;
+	}
+
+	.distance-img {
+    margin: 26px 0 0 -4px;
+	}
+
+	.main-distance__number {
+    margin: -42px 0 0 -30px;
+	}
+
+	.main-distance__text{
+		margin: 12px 0 0 8px;
+	}
+
+	.main-distance__subtitle {
+    margin: 20px -25px 17px -47px;
+	}
+
+	.links {
+  	margin: 138px -80px 0 -125px;
+	}
+
+	.test-drive {
+		margin: -2px -43px 0px 84px;
+	}
+
+	.main-button {
+		width: 155px;
+    height: 35px;
+    margin: -43px 0px 0 22px;
+	}
+
+	.arrow {
+		margin-top: -14px;
+	  margin-left: 3px;
+	}
+}
+
+@media(max-width: 334px) {
+	.links {
+    margin: 103px -97px 0 -123px;
+	}
+
+	.test-drive {
+		background-size: 100px;
+    background-position-x: 8px;
+	}
+
+	.main-button {
+    font: 700 11px/9px Montserrat-Bold, arial, helvetica, sans-serif;
+    width: 143px;
+    height: 29px;
+    margin: -43px 0px 0 18px;
+  }
+}
+
+@media(max-width: 284px) {
+	.test-drive {
+		background-size: 98px;
+    background-position-x: 22px;
+	}
+
+	.arrow {
+		margin-left: 27px;
+		background-size: 22px;
+	}
 }
