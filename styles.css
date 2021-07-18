@@ -1015,6 +1015,18 @@ body {
 	}
 }
 
+@media(max-width: 700px) {
+	.description-up, .description-low {
+		width: 102%;
+	}
+}
+
+@media(max-width: 687px) {
+	.description-up, .description-low {
+		width: 104%;
+	}
+}
+
 @media(max-width: 670px) {
 	.main__red-car {
 		background-size: 600px;
@@ -1033,6 +1045,18 @@ body {
 		margin: -2px 0 0px 53px;
     width: 180px;
    background-position-x: 6px;
+	}
+}
+
+@media(max-width: 665px) {
+	.description-up, .description-low {
+		width: 107%;
+	}
+}
+
+@media(max-width: 639px) {
+	.description-up, .description-low {
+		width: 112%;
 	}
 }
 
@@ -1285,11 +1309,11 @@ body {
 	}
 
 	.main-speed__subtitle {
-		margin: -13px 0 0 -38px;
+		margin: -10px 0 0 -38px;
 	}
 
 	.main-distance {
-    margin: 0 -209px 45px 0;
+    margin: 2px -233px 45px 0;
 	}
 
 	.distance-img {
@@ -1319,7 +1343,7 @@ body {
 	.main-button {
 		width: 155px;
     height: 35px;
-    margin: -43px 0px 0 22px;
+    margin: -43px 0px 0 31px;
 	}
 
 	.arrow {
@@ -1330,6 +1354,55 @@ body {
 	.img-title__up {
 		display: none;
 	}
+
+	.description-up {
+		background: url(img/salonmob.svg);
+		width: 100%;
+		height: 323px;
+		background-position-y: -2px;
+	}
+
+	.upper {
+		margin-top: 86%;
+		padding: 0 0 0 26px;
+		height: 304px;
+	}
+
+	.upper__title {
+		margin: 18px 0 0 0;
+	}
+
+	.upper__subtitle {
+		margin-top: 11px;
+	}
+
+	.display, .functionality, .space, .description-first, .lower__protection, .protection, .description-second {
+		display: none;
+	}
+
+	.description-low {
+		background: url(img/carlowmob.svg) no-repeat;
+		width: 100%;
+		height: 300px;
+		margin-top: 96%;
+	}
+
+	.img-title__low {
+    left: -8px;
+    top: -114px;
+    font: 600 100px/122px Montserrat-SemiBold, arial, helvetica, sans-serif;
+  }
+
+   .lower {
+    margin-top: 238px;
+    padding: 0 0 0 31px;
+    height: 303px;
+  }
+
+  .lower__title {
+  	width: 92%;
+  	margin-top: 18px;
+  }
 }
 
 @media(max-width: 334px) {
