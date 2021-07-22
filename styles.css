@@ -1,5 +1,6 @@
 body {
   margin: 0 auto;
+  max-width: 1920px;
 }
 
 .model, .menu {
@@ -1114,12 +1115,33 @@ body {
 }
 
 @media(max-width: 665px) {
-	
+	.functionality {
+		width: 171px;
+	}
+
+	.lower__protection {
+    margin: -268px 0 30px 355px;
+	}
+
+	.protection {
+    margin: 0px 0 89px 355px;
+  }
+
+  .description-low {
+  	background-size: contain;
+  }
+
+  .img-title__low {
+  	width: 100%;
+  	top: 78px;
+  	left: 0;
+  	background-position-x: center;
+  }
 }
 
 @media(max-width: 639px) {
-	.description-up, .description-low {
-		width: 112%;
+	.char {
+		margin-left: -9%;
 	}
 }
 
@@ -1149,6 +1171,63 @@ body {
 	}
 }
 
+@media(max-width: 579px) {
+	.upper__title, .lower__title, .lower__protection {
+    font: 600 24px/37px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.main__subtitle, .upper__subtitle, .lower__subtitle {
+    font: 500 12px/18px Montserrat-Medium, arial, helvetica, sans-serif;
+	}
+
+	.upper__subtitle {
+    width: 260px;
+	}
+
+	.lower__subtitle {
+    width: 255px;
+  }
+
+  .char {
+  	margin-left: -20%;
+  }
+
+  .upper, .lower {
+    margin-left: -34px;
+	}
+
+	.description__link {
+    font: 700 12px/19px Montserrat-Bold, arial, helvetica, sans-serif;
+	}
+
+	.description__button {
+    font: 700 12px/19px Montserrat-Bold, arial, helvetica, sans-serif;
+    margin-left: 30px;
+    padding: 10px 53px;
+	}
+
+	.upper__title, .upper__subtitle, .lower__title, .lower__subtitle {
+		padding-left: 10px;
+	}
+
+	.protection {
+		font: 700 12px/20px Montserrat-Bold, arial, helvetica, sans-serif;
+		margin: 0px 0 89px 301px;;
+	}
+
+	.lower__protection {
+		margin: -268px 0 30px 301px;
+	}
+
+	.protection__item::after {
+		background-size: 17%;
+	}
+
+	.img-title__up {
+    left: 41%;
+	}
+}
+
 @media(max-width: 542px) {
 	.main__pros {
 		margin: -276px 0 0 -57px;
@@ -1165,6 +1244,17 @@ body {
 
 	.links {
     margin: 210px -143px 0 -185px;
+	}
+
+	.protection__item::after {
+		background: url(img/Screenshot_2.png) no-repeat;
+		width: 200px;
+		height: 25px;
+		background-position: right;
+	}
+
+	.char {
+    margin-left: -24%;
 	}
 }
 
