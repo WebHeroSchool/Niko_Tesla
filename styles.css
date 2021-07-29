@@ -487,6 +487,7 @@ body {
 	height: 755px;
 	position: absolute;
 	background-position: 345px 171px;
+	z-index: 1;
 }
 
 .img-title__low {
@@ -653,7 +654,7 @@ body {
 
 	.img {
     width: 100%;
-    background-size: 70%;
+    background-size: 67%;
     background-position-y: 239px;
 	}
 
@@ -714,7 +715,7 @@ body {
 	}
 
 	.img {
-		background-size: 67%;
+		background-size: 62%;
 		background-position-y: 308px;
 	}
 
@@ -1350,6 +1351,10 @@ body {
 }
 
 @media(max-width: 476px) {
+	.header {
+    margin: 0 0 58px 20px;
+	}
+
 	.char {
     margin-left: -33%;
     width: 100%;
@@ -1361,6 +1366,12 @@ body {
 
 	.lower__protection {
     margin: -257px 0 31px 270px;
+	}
+}
+
+@media(max-width: 463px) {
+	.char {
+		margin-left: -36%;
 	}
 }
 
@@ -1401,6 +1412,77 @@ body {
   }
 }
 
+@media(max-width: 440px) {
+	.display::before {
+    background-size: 23px;
+	}
+
+	.functionality::before {
+    background-size: 30px;
+    top: 33px;
+    left: 10px;
+	}
+
+	.functionality {
+		width: 103px;
+	}
+
+	.space::before {
+    background-size: 22px;
+    left: 14px;
+	}
+
+	.display__text, .space__text {
+    padding-left: 4px;
+    font: 600 13px/24px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.functionality__title {
+    font: 600 12px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	  margin-bottom: -5px;
+	}
+
+	.display {
+    margin: -292px 0 27px 420px;
+	}
+
+	.space__subtitle {
+		width: 90px;
+	}
+
+	.description-first, .description-second {
+    padding-left: 19%;
+	}
+
+	.description-first::before, .description-second::before {
+    left: 53px;
+	}	
+
+	.lower__subtitle {
+    width: 207px;
+    font: 500 9px/18px Montserrat-Medium, arial, helvetica, sans-serif;
+	}
+
+	.lower__protection {
+    margin: -257px 0 10px 270px;
+	}
+
+	.protection {
+    font: 700 8px/20px Montserrat-Bold, arial, helvetica, sans-serif;
+  }
+
+  .protection__item {
+    margin-left: -37px;
+	}
+
+	.upper__title, .lower__title, .lower__protection {
+    font: 600 18px/33px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.lower__protection {
+    margin: -257px 0 10px 234px;
+	}
+}
 
 @media(max-width: 425px) {
 	.main__title {
@@ -1478,11 +1560,59 @@ body {
   }
 
   .main-distance {
-    margin: 24px -348px 57px 0;
+    margin: 24px -227px 57px 0;
+    width: 76px;
 	}
 
 	.arrow {
     margin-top: -12px;
+	}
+
+	.upper__subtitle {
+    width: 179px;
+    font: 500 9px/18px Montserrat-Medium, arial, helvetica, sans-serif;
+	}
+
+	.char {
+    margin-left: -44%;
+	}
+}
+
+@media(max-width: 400px) {
+	.char {
+    margin-left: -50%;
+	}
+
+	.main-distance__subtitle {
+		width: 61px;
+	}
+
+	.img-title__up {
+    font: 600 46px/85px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.description__link {
+    font: 700 9px/19px Montserrat-Bold, arial, helvetica, sans-serif;
+	}
+
+	.description__button {
+    font: 700 9px/19px Montserrat-Bold, arial, helvetica, sans-serif;
+    margin-left: 55px;
+    padding: 6px 28px;
+	}
+
+	.description-first, .description-second {
+    padding-left: 21%;
+	}
+
+	.description-first::before, .description-second::before {
+    left: 59px;
+    top: 1px;
+    background-size: 20px;
+	}
+
+	.protection__item::after {
+		background-size: 77px;
 	}
 }
 
@@ -1493,6 +1623,10 @@ body {
 
 	.main-button {
 		margin: -45px 0px 0 12px;
+	}
+
+	.char {
+    margin-left: -55%;
 	}
 }
 
@@ -1793,7 +1927,7 @@ body {
 
   .img {
   	width: 1700px;
-  	background-position: 628px 182px;
+  	background-position: 398px 123px;
   }
 
   .whs {
