@@ -619,7 +619,7 @@ body {
 	}
 
 	.img {
-		background-size: 963px;
+		background-size: 912px;
 	}
 
 	.upper {
@@ -634,7 +634,7 @@ body {
 	}
 
 	.img {
-		background-size: 925px;
+		background-size: 846px;
 	}
 
 	.upper {
@@ -1009,9 +1009,10 @@ body {
 	}
 
 	.img-title__low {
-    left: 83px;
-    top: -85px;
-    font: 600 148px/180px Montserrat-SemiBold, arial, helvetica, sans-serif;
+    left: 96px;
+    background-size: 93%;
+    top: 73px;
+    width: 82%;
 	}
 
 	.lower {
@@ -1071,6 +1072,10 @@ body {
 
 	.img-title__low {
 		font: 600 135px/180px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.description-low {
+		background-size: 100%;
 	}
 }
 
@@ -1186,7 +1191,7 @@ body {
 	}
 }
 
-@media(max-width: 579px) {
+@media(max-width: 581px) {
 	.upper__title, .lower__title, .lower__protection {
     font: 600 24px/37px Montserrat-SemiBold, arial, helvetica, sans-serif;
 	}
@@ -1410,6 +1415,16 @@ body {
     height: 46px;
     margin: -33px 25px 0 17px;
   }
+}
+
+@media(max-width: 443px) {
+	.upper__subtitle {
+    width: 216px;
+	}
+
+	.char {
+    margin-left: -42%;
+	}
 }
 
 @media(max-width: 440px) {
