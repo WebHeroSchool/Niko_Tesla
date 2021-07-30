@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  
+  max-width: 1920px;
 }
 
 .model, .menu {
@@ -243,7 +243,7 @@ body {
 	background-position: 16px 30px;
   background-size: 55px;
   width: 81px;
-  height: 64px;
+  height: 67px;
 }
 
 .main-speed__number {
@@ -312,7 +312,7 @@ body {
  	border: 2px solid #e51937;
  	width: 156px;
   height: 36px;
-  margin: -16px 0px 0 37px;
+  margin: -13px 0px 0 36px;
   transition: background-color, color .8s;
   cursor: pointer;
  }
@@ -330,609 +330,16 @@ body {
 	cursor: pointer;
 }
 /*////////header и первая секция\\\\\\\\\*/
-/*////////Адаптив: header и первая секция\\\\\\\\\*/
-
-
-@media(max-width: 1200px) {
-	.btn {
-		left: 800px;
-	}
-
-	.model {
-		margin-right: 83px;
-	}
-}
-
-@media(max-width: 1136px) {
-	.main-speed {
-    margin: -48px 0 0 -195px;
-  }
-
-  .links {
-    margin: 0 -170px 0 -30px;
-	}
-
-	.main__red-car {
-		background-size: contain;
-	}
-
-	.main {
-		background-position-y: 10%;
-	}
-}
-
-@media(max-width: 875px) {
-	.main__pros {
-		margin-top: -82px;
-	}
-}
-
-@media(max-width: 1070px) {
-	.model, .menu {
-    font: 600 12px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
-	}
-
-	.btn {
-		left: 704px;
-	}
-}
-
-@media(max-width: 968px) {
-	.model{
-		margin-right: 5px;
-	}
-
-	.btn {
-		left: 624px;
-	}
-}
-
-@media(max-width: 885px) {
-	.model__item {
-    margin-right: 29px;
-  }
-
-  .model__item_active {
-    margin-right: 29px;
-	}
-
-	.btn {
-    left: 572px;
-   }
-}
-
-@media(max-width: 844px) {
-	.model__item {
-    margin-right: 22px;
-	}
-
-	.btn {
-		left: 529px;
-	}
-}
-
-@media(max-width: 768px) {
-	.model, .menu {
-		display: none;
-	}
-
-	.btn {
-		left: 0;
-		top: 0
-	}
-
-	.header {
-		margin: 0 0 58px 35px;
-	}
-
-	.logo {
-		background-position-x: -20px;
-	}
-
-	.btn {
-    left: -13px;
-    top: -1px;
-    width: 36px;
-	}
-
-	.btn > span, .btn > span::after, .btn > span::before {
-		height: 4px;
-	}
-
-	.btn > span::before {
-    top: -10px;
-	}
-
-	.btn > span::after {
-    top: 10px;
-	}
-
-	.main__title {
-    margin: 21px 0 0 0;
-	}
-
-	.main {
-		background: url(img/tesla_ipad.svg) no-repeat;
-		background-position: 50% 20%;
-		background-size: contain;
-	}
-
-	.main__red-car {
-		background: url(img/car_ipad.svg) no-repeat;
-		background-position: 50% 65%;
-	}
-
-	.speed-img{
-		background-position: 1px 8px;
-    background-size: 77px;
-    width: 101px;
-    height: 91px;
-	}
-
-	.main-speed {
-    margin: -2px 0 44px -70px;
-	}
-
-	.main-speed__number {
-		font: 600 50px/61px Montserrat-SemiBold, arial, helvetica, sans-serif;
-		margin: -45px 0 0 -8px;
-		position: relative;
-	}
-
-	.main-speed__text {
-		position: absolute;
-		margin: 22px 0 0 11px;
-	}
-
-	.main-speed__subtitle {
-    margin: 27px 0 0 -71px;
-	}
-
-	.main-distance {
-    height: 150px;
-    margin: 0 -356px 57px 0;
-	}
-
-	.distance-img {
-		background: url(img/Road-icon-ipad.svg) no-repeat;
-		background-position: 16% 12px;
-		height: 100px;
-	}
-
-	.main-distance__number {
-		font: 600 50px/60px Montserrat-SemiBold, arial, helvetica, sans-serif;
-		margin: -36px 0 0 -3px;
-		position: relative;
-	}
-
-	.main-distance__text {
-		position: absolute;
-		margin: 21px 0 0 10px;
-	}
-
-	.main-distance__subtitle {
-    margin: 55px -25px 17px -88px;
-	}
-
-	.links {
-    margin: 210px -30px 0px -194px;
-    height: 88px;
-    width: 500px;
-	}
-
-	.test-drive {
-		background: url(img/Test-drive-red.svg) no-repeat;
-		margin: -2px 0 0px 80px;
-		width: 164px;
-	}
-
-	.main-button {
-		font: 700 16px/16px Montserrat-Bold, arial, helvetica, sans-serif;
-		width: 216px;
-    height: 51px;
-    margin: -33px 0px 0 34px;
-    background-color: #e51937;
-    color: #fefefe;
-	}
-
-	.main-button:hover {
-		color: #e51937;
-		background-color: #fefefe;
-  }
-
-	.arrow {
-		margin-top: 28px;
-	}
-}
-
-@media(max-width: 670px) {
-	.main__red-car {
-		background-size: 600px;
-		background-position: 50% 58%;
-	}
-
-	.links {
-		margin: 210px -90px 0 -194px;
-	}
-
-	.main__pros {
-		margin-right: 18px;
-	}
-
-	.test-drive {
-		margin: -2px 0 0px 53px;
-    width: 180px;
-   background-position-x: 6px;
-	}
-}
-
-@media(max-width: 632px) {
-	.main__pros {
-    margin-right: 43px;
-	}
-}
-
-@media(max-width: 585px) {
-	.main__red-car {
-    background-size: 540px;
-    background-position: 50% 38%;
-	}
-
-	.main__pros {
-    margin-top: -141px;
-    margin-left: -36px;
-	}
-
-	.main-distance {
-    margin: 0 -313px 57px 0;
-	}
-
-	.links {
-    margin: 210px -136px 0 -194px;
-	}
-}
-
-@media(max-width: 542px) {
-	.main__pros {
-		margin: -276px 0 0 -57px;
-	}
-
-	.main__red-car {
-    background-size: 430px;
-    background-position: 50% 16%;
-	}
-
-	.main__title {
-		margin: 0;
-	}
-
-	.links {
-    margin: 210px -143px 0 -185px;
-	}
-}
-
-@media(max-width: 458px) {
-	.links {
-		margin: 210px -136px 0 -170px;
-	}
-
-	.main__title {
-    font: 600 72px/97px Montserrat-SemiBold, arial, helvetica, sans-serif;
-	}
-
-	.main__subtitle {
-		font: 500 14px/18px Montserrat-Medium, arial, helvetica, sans-serif;
-	}
-
-	.main-speed__subtitle {
-    margin: 27px 0 0 -61px;
-	}
-
-	.main-speed__number {
-		font: 600 43px/61px Montserrat-SemiBold, arial, helvetica, sans-serif;
-	}
-
-	.main-distance__number {
-    font: 600 43px/60px Montserrat-SemiBold, arial, helvetica, sans-serif;
-  }
-
-  .main-distance__subtitle {
-    margin: 55px -25px 17px -75px;
-	}
-
-	.main-button {
-    font: 700 14px/16px Montserrat-Bold, arial, helvetica, sans-serif;
-    width: 192px;
-    height: 46px;
-    margin: -33px 25px 0 17px;
-  }
-}
-
-
-@media(max-width: 425px) {
-	.main__title {
-    font: 600 75px/110px Montserrat-SemiBold, arial, helvetica, sans-serif;
-	}
-
-	.main__subtitle {
-		font: 500 13px/18px Montserrat-Medium, arial, helvetica, sans-serif;
-		margin: -18px 0 0 0;
-	}
-
-	.main__red-car {
-    background-size: 370px;
-	}
-
-	.speed-img {
-		background: url(img/speed-mobile.svg) no-repeat;
-		background-position: 50% 15%;
-	}
-
-	.main-speed__number {
-    font: 600 27px/33px Montserrat-SemiBold, arial, helvetica, sans-serif;
-    margin: -51px 0 0 -22px;
-  }
-
-  .main-speed__text {
-    font: 600 15px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
-    margin: 10px 0 0 3px;
-  }
-
-  .main-speed__subtitle {
-    font: 400 10px/12px Montserrat-Regular, arial, helvetica, sans-serif;
-    margin: -2px 0 0 -38px;
-	}
-
-	.distance-img {
-		background: url(img/distance-mobile.svg) no-repeat;
-		margin: 33px 0 0 0;
-	}
-
-	.main-distance__number {
-		font: 600 27px/33px Montserrat-SemiBold, arial, helvetica, sans-serif;
-		margin: -40px 0 0 -34px;
-	}
-
-	.main-distance__text {
-		font: 600 15px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
-		margin: 7px 0 0 3px;
-	}
-
-	.main-distance__subtitle {
-		font: 400 10px/12px Montserrat-Regular, arial, helvetica, sans-serif;
-		margin: 22px -25px 17px -47px;
-	}
-
-	.links {
-    margin: 152px -112px 0 -158px;
-	}
-
-	.main-button {
-    font: 700 13px/18px Montserrat-Bold, arial, helvetica, sans-serif;
-    width: 148px;
-    height: 35px;
-    margin: -45px 0px 0 36px;
-  }
-
-	.test-drive {
-		background: url(img/test-mobile.svg) no-repeat;
-		margin: -2px 0 0px 84px;
-		background-position-x: 25px;
-	}
-
-	.main-speed {
-    margin: 21px 0 44px -60px;
-  }
-
-  .main-distance {
-    margin: 24px -348px 57px 0;
-	}
-
-	.arrow {
-    margin-top: -12px;
-	}
-}
-
-@media(max-width: 385px) {
-	.links {
-    margin: 152px -112px 0 -135px;
-	}
-
-	.main-button {
-		margin: -45px 0px 0 12px;
-	}
-}
-
-@media(max-width: 375px) {
-	.main-distance {
-		width: 97px;
-	}
-
-	.btn {
-    left: -30px;
-    top: -23px;
-    width: 24px;
-	}
-
-	.btn > span, .btn > span::after, .btn > span::before {
-		height: 2px;
-	}
-
-	.btn > span::before {
-    top: -7px;
-	}
-
-	.btn > span::after {
-    top: 7px;
-	}
-
-	.logo {
-		background: url(img/logo-mobile.svg) no-repeat;
-		background-position: -33% -20%;
-    margin: 0 0 0 -24px;
-	}
-
-	.main__title {
-    font: 600 50px/61px Montserrat-SemiBold, arial, helvetica, sans-serif;
-    margin-top: -55px;
-  }
-
-  .main__subtitle {
-    font: 500 10px/12px Montserrat-Medium, arial, helvetica, sans-serif;
-    margin: -3px 0 0 0;
-	}
-
-	.main {
-		background: url(img/Tesla-mobile.svg) no-repeat;
-		background-size: contain;
-    background-position-y: 7%;
-	}
-
-	.main__red-car {
-		background: url(img/car-mobile.svg) no-repeat;
-		background-size: 95%;
-    background-position: 50% 17%;
-	}
-
-	.main__pros {
-    margin: -273px 0 0 -36px;
-	}
-
-	.main-speed {
-		margin: 13px 0 44px -67px;
-	}
-
-	.speed-img {
-		background-position: 45% 15%;
-	}
-
-	.main-speed__number {
-		margin: -54px 0 0 -22px;
-	}
-
-	.main-speed__text {
-		margin: 12px 0 0 9px;
-	}
-
-	.main-speed__subtitle {
-		margin: -13px 0 0 -38px;
-	}
-
-	.main-distance {
-    margin: 0 -209px 45px 0;
-	}
-
-	.distance-img {
-    margin: 26px 0 0 -4px;
-	}
-
-	.main-distance__number {
-    margin: -42px 0 0 -30px;
-	}
-
-	.main-distance__text{
-		margin: 12px 0 0 8px;
-	}
-
-	.main-distance__subtitle {
-    margin: 20px -25px 17px -47px;
-	}
-
-	.links {
-  	margin: 138px -80px 0 -125px;
-	}
-
-	.test-drive {
-		margin: -2px -43px 0px 84px;
-	}
-
-	.main-button {
-		width: 155px;
-    height: 35px;
-    margin: -43px 0px 0 22px;
-	}
-
-	.arrow {
-		margin-top: -14px;
-	  margin-left: 3px;
-	}
-}
-
-@media(max-width: 334px) {
-	.links {
-    margin: 103px -97px 0 -123px;
-	}
-
-	.test-drive {
-		background-size: 100px;
-    background-position-x: 8px;
-	}
-
-	.main-button {
-    font: 700 11px/9px Montserrat-Bold, arial, helvetica, sans-serif;
-    width: 143px;
-    height: 29px;
-    margin: -43px 0px 0 18px;
-  }
-}
-
-@media(max-width: 284px) {
-	.test-drive {
-		background-size: 98px;
-    background-position-x: 22px;
-	}
-
-	.arrow {
-		margin-left: 27px;
-		background-size: 22px;
-	}
-}
-
-@media(min-width: 1600px) {
-	.model {
-    margin-right: 241px;
-	}
-
-	.btn {
-		left: 982px;
-	}
-}
-
-@media(min-width: 1750px) {
-	.model {
-    margin-right: 302px;
-	}
-
-	.btn {
-    left: 1032px;
-  }
-
-  .main-distance {
-    margin: 0 0 0 -200px;
-	}
-}
-
-@media(min-width: 1920px) {
-	.model {
-    margin-right: 365px;
-	}
-
-	.btn {
-		left: 1098px;
-	}
-
-	.main-distance {
-  	margin: 0 0 0 -324px;
-	}
-}
 /*///////////////////2 секция//////////////////////*/
 .description-up {
 	background: url(img/salon.svg) no-repeat;
 	width: 1440px;
-	height: 900px;
-	background-position-y: 102%;
+	height: 935px;
+	background-position-y: 100%;
 	position: relative;
-	background-size: 1274px;
+	background-size: 88%;
+	display: flex;
+	justify-content: space-between;
 }
 
 .upper {
@@ -950,7 +357,7 @@ body {
 	color: #E51937; 
 	position: absolute;
 	left: 80px;
-  top: 8px;
+  top: 42px;
 }
 
 .upper__title {
@@ -1080,31 +487,31 @@ body {
 	height: 755px;
 	position: absolute;
 	background-position: 345px 171px;
+	z-index: 1;
 }
 
 .img-title__low {
-	font: 600 200px/243px Montserrat-SemiBold, arial, helvetica, sans-serif;
-	color: #E51937; 
+	background: url(img/ModelS.svg) no-repeat;
+	width: 793px;
+	height: 151px;
 	position: absolute;
-	opacity: 0.1;
-	width: 809px;
-	left: 629px;
-  top: -68px;
+	top: 142px;
+	left: 646px;
 }
 
 .whs {
 	background: url(img/whs.svg);
 	width: 94px;
-	height: 38px;
+	height: 39px;
 	position: absolute;
 	right: 18px;
-	bottom: 15px;
+	bottom: 13px;
 }
 
 .lower {
 	background: #E51937;
 	width: 384px;
-	height: 876px;
+	height: 874px;
 	padding: 26px 0 0 56px;
 	color: white;
 }
@@ -1124,6 +531,7 @@ body {
 
 .protection__item {
 	position: relative;
+	margin-bottom: -1px;
 }
 
 .protection__item::after {
@@ -1137,7 +545,7 @@ body {
 }
 
 .protection {
-	margin-bottom: 99px;
+	margin-bottom: 104px;
 }
 
 .lower-text {
@@ -1180,6 +588,1442 @@ body {
 	left: -18px;
 	cursor: pointer;
 }
+/*////////adaptive///////////////*/
+@media(max-width: 1366px) {
+	.upper {
+		margin-left: 926px;
+	}
+
+	.description {
+		width: 100%;
+	}
+
+	.img-title__low {
+    left: 41%;
+	}
+
+	.img {
+		width: 100%;
+	}
+
+	.description-up {
+		width: 100%;
+		background-size: 89%;
+	}
+}
+
+@media(max-width: 1309px) {
+	.img-title__low {
+		left: 38%;
+		width: 62%;
+	}
+
+	.img {
+		background-size: 912px;
+	}
+
+	.upper {
+		margin-left: 869px;
+	}
+}
+
+@media(max-width: 1260px) {
+	.upper {
+		margin-left: 820px;
+	}
+}
+
+@media(max-width: 1250px) {
+	.img-title__low {
+		left: 36%;
+		background-size: contain;
+	}
+
+	.img {
+		background-size: 846px;
+	}
+
+	.upper {
+		margin-left: 810px;
+	}
+}
+
+
+@media(max-width: 1200px) {
+	.btn {
+		left: 800px;
+	}
+
+	.model {
+		margin-right: 83px;
+	}
+
+	.img {
+    width: 100%;
+    background-size: 67%;
+    background-position-y: 239px;
+	}
+
+	.img-title__low {
+		left: 45%;
+	}
+
+	.description-low {
+		width: 100%
+	}
+
+	.description-up {
+		width: 100%
+	}
+
+	.upper {
+		margin-left: 64%;
+	}
+
+	.img-title__low {
+    width: 50%;
+  }
+}
+
+@media(max-width: 1136px) {
+	.main-speed {
+    margin: -48px 0 0 -195px;
+  }
+
+  .links {
+    margin: 0 -170px 0 -30px;
+	}
+
+	.main__red-car {
+		background-size: contain;
+	}
+
+	.main {
+		background-position-y: 10%;
+	}
+
+	.description-first::before {
+		left: -27px;
+	}
+
+	.description-first {
+		padding-left: 0;
+	}
+
+	.description__button{
+		padding: 8px 26px;
+	}
+}
+
+@media(max-width: 1006px) {
+	.upper {
+		margin-left: 57%;
+	}
+
+	.img {
+		background-size: 62%;
+		background-position-y: 308px;
+	}
+
+	.img-title__low {
+		left: 49%;
+	}
+}
+
+@media(max-width: 875px) {
+	.main__pros {
+		margin-top: -82px;
+	}
+}
+
+@media(max-width: 1070px) {
+	.model, .menu {
+    font: 600 12px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.btn {
+		left: 704px;
+	}
+}
+
+@media(max-width: 901px) {
+	.upper {
+		margin-left: 56%;
+	}
+}
+
+@media(max-width: 968px) {
+	.model{
+		margin-right: 5px;
+	}
+
+	.btn {
+		left: 624px;
+	}
+}
+
+@media(max-width: 885px) {
+	.model__item {
+    margin-right: 29px;
+  }
+
+  .model__item_active {
+    margin-right: 29px;
+	}
+
+	.btn {
+    left: 572px;
+   }
+
+  .img-title__low {
+  	background-size: 86%;
+  	left: 57%;
+  	width: 42%;
+  }
+
+  .img {
+  	background-size: 60%;
+  }
+}
+
+@media(max-width: 844px) {
+	.model__item {
+    margin-right: 22px;
+	}
+
+	.btn {
+		left: 529px;
+	}
+}
+
+@media(max-width: 806px) {
+	.img {
+		left: -1%;
+  	background-size: 55%;
+	}
+}
+
+@media(max-width: 768px) {
+	.model, .menu {
+		display: none;
+	}
+
+	.btn {
+		left: 0;
+		top: 0
+	}
+
+	.header {
+		margin: 0 0 58px 35px;
+	}
+
+	.logo {
+		background-position-x: -20px;
+	}
+
+	.btn {
+    left: -13px;
+    top: -1px;
+    width: 36px;
+	}
+
+	.btn > span, .btn > span::after, .btn > span::before {
+		height: 4px;
+	}
+
+	.btn > span::before {
+    top: -10px;
+	}
+
+	.btn > span::after {
+    top: 10px;
+	}
+
+	.main__title {
+    margin: 23px 0 0 0;
+	}
+
+	.main {
+		background: url(img/tesla_ipad.svg) no-repeat;
+		background-position: 50% 20%;
+		background-size: contain;
+	}
+
+	.main__red-car {
+		background: url(img/car_ipad.svg) no-repeat;
+		background-position: 50% 65%;
+	}
+
+	.speed-img{
+		background-position: 1px 8px;
+    background-size: 77px;
+    width: 101px;
+    height: 91px;
+	}
+
+	.main-speed {
+    margin: -2px 0 44px -70px;
+	}
+
+	.main-speed__number {
+		font: 600 50px/61px Montserrat-SemiBold, arial, helvetica, sans-serif;
+		margin: -45px 0 0 -8px;
+		position: relative;
+	}
+
+	.main-speed__text {
+		position: absolute;
+		margin: 22px 0 0 11px;
+	}
+
+	.main-speed__subtitle {
+    margin: 27px 0 0 -71px;
+	}
+
+	.main-distance {
+    height: 150px;
+    margin: 0 -356px 57px 0;
+	}
+
+	.distance-img {
+		background: url(img/Road-icon-ipad.svg) no-repeat;
+		background-position: 16% 12px;
+		height: 100px;
+	}
+
+	.main-distance__number {
+		font: 600 50px/60px Montserrat-SemiBold, arial, helvetica, sans-serif;
+		margin: -36px 0 0 -3px;
+		position: relative;
+	}
+
+	.main-distance__text {
+		position: absolute;
+		margin: 21px 0 0 10px;
+	}
+
+	.main-distance__subtitle {
+    margin: 55px -25px 17px -88px;
+	}
+
+	.links {
+    margin: 208px -30px 0px -194px;
+    height: 88px;
+    width: 500px;
+	}
+
+	.test-drive {
+		background: url(img/Test-drive-red.svg) no-repeat;
+		margin: -2px 0 0px 80px;
+		width: 164px;
+	}
+
+	.main-button {
+		font: 700 16px/16px Montserrat-Bold, arial, helvetica, sans-serif;
+		width: 216px;
+    height: 51px;
+    margin: -33px 0px 0 34px;
+    background-color: #e51937;
+    color: #fefefe;
+	}
+
+	.main-button:hover {
+		color: #e51937;
+		background-color: #fefefe;
+  }
+
+	.arrow {
+		margin-top: 26px;
+	}
+
+	.whs {
+		display: none;
+	}
+
+	.description-up {
+		background: url(img/carredpad.svg) no-repeat;
+		height: 1048px;
+		background-position: 0 60px;
+		background-size: 100%;
+	}
+
+	.upper {
+		width: 100%;
+		height: 456px;
+		margin-top: 73%;
+		margin-left: 0;
+		padding: 32px 0 0 34px;
+	}
+
+	.upper__title {
+		margin: 27px 0 22px 0;
+	}
+
+	.display {
+		margin: -292px 0 -15px 420px;
+	}
+
+	.functionality {
+		margin-left: 420px;
+		margin-bottom: -13px;
+	}
+
+	.space {
+		margin: 0 0 93px 420px;
+		padding-left: 61px;
+	}
+
+	.description__link {
+		font: 700 16px/19px Montserrat-Bold, arial, helvetica, sans-serif;
+	}
+
+	.description-first {
+		padding-left: 164px;
+	}
+
+	.description-first::before {
+		background: url(img/ipad.svg);
+		width: 32px;
+		height: 32px;
+		left: 120px;
+    top: -6px;
+	}
+
+	.description__button {	
+    font: 700 16px/19px Montserrat-Bold, arial, helvetica, sans-serif;
+    margin-left: 39px;
+    border: 3px solid #FFF;
+    padding: 15px 62px;
+	}
+
+	.img-title__up {
+		left: 434px;
+		top: 14px
+	}
+
+	.img {
+		display: none;
+	}
+
+	.description-low {
+		background: url(img/carpadfr.svg) no-repeat;
+		width: 100%;
+		height: 500px;
+		display: flex;
+    justify-content: space-between;
+    background-position-y: 79px;
+	}
+
+	.img-title__low {
+    left: 96px;
+    background-size: 93%;
+    top: 73px;
+    width: 82%;
+	}
+
+	.lower {
+		margin-top: 541px;
+		width: 100%;
+    height: 448px;
+    padding: 40px 0 0 34px;
+	}
+
+	.lower__title {
+		width: 70%;
+		margin-top: 23px;
+	}
+
+	.lower__protection {
+		margin: -37% 0 30px 388px;
+	}
+
+	.protection {
+		margin: 0 0 89px 389px;
+		font: 700 17px/20px Montserrat-Bold, arial, helvetica, sans-serif;
+	}
+
+	.protection__item {
+		margin-bottom: 0;
+	}
+
+	.protection__item::after {
+		right: 55px;
+	}
+
+	.lower-text {
+		display: none;
+	}
+
+	.description-second {
+		padding-left: 164px;
+	}
+
+	.description-second::before {
+		background: url(img/ipad.svg);
+		width: 32px;
+		height: 32px;
+		top: -6px;
+		left: 120px;
+	}
+}
+
+@media(max-width: 728px) {
+	.img-title__up {
+		left: 50%;
+	}
+
+	.protection__item::after {
+    right: 8%;
+	}
+
+	.img-title__low {
+		font: 600 135px/180px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.description-low {
+		background-size: 100%;
+	}
+}
+
+@media(max-width: 700px) {
+	.description-up, .description-low {
+		width: 100%;
+	}
+
+	.upper, .lower {
+		margin-left: -13px;
+	}
+
+	.lower__protection {
+    margin: -268px 0 30px 388px;
+	}
+
+	.char {
+		margin-left: -11px;
+	}
+}
+
+@media(max-width: 687px) {
+	.upper, .lower {
+		margin-left: -26px;
+	}
+}
+
+@media(max-width: 670px) {
+	.main__red-car {
+		background-size: 600px;
+		background-position: 50% 58%;
+	}
+
+	.links {
+		margin: 210px -90px 0 -194px;
+	}
+
+	.main__pros {
+		margin-right: 18px;
+	}
+
+	.test-drive {
+		margin: -2px 0 0px 53px;
+    width: 180px;
+   background-position-x: 6px;
+	}
+}
+
+@media(max-width: 665px) {
+	.functionality {
+		width: 171px;
+	}
+
+	.lower__protection {
+    margin: -268px 0 30px 355px;
+	}
+
+	.protection {
+    margin: 0px 0 89px 355px;
+  }
+
+  .description-low {
+  	background-size: contain;
+  }
+
+  .img-title__low {
+  	width: 100%;
+  	top: 78px;
+  	left: 0;
+  	background-position-x: center;
+  }
+}
+
+@media(max-width: 639px) {
+	.char {
+		margin-left: -9%;
+	}
+}
+
+@media(max-width: 632px) {
+	.main__pros {
+    margin-right: 43px;
+	}
+}
+
+@media(max-width: 600px) {
+	.upper, .lower {
+    margin-left: -34px;
+	}
+
+	.char {
+		margin-left: -14%;
+	}
+
+	.full-protection {
+		margin: 46% 0 0 -55%;
+	}
+
+	.lower__title {
+    width: 88%;
+    margin-top: -17px;
+    margin-left: 24px;
+	}
+
+	.lower__subtitle {
+    width: 90%;
+    margin-bottom: 57px;
+    margin-left: 24px;
+	}
+
+	.lower {
+		height: 600px;
+	}
+}
+
+@media(max-width: 585px) {
+	.main__red-car {
+    background-size: 540px;
+    background-position: 50% 38%;
+	}
+
+	.main__pros {
+    margin-top: -141px;
+    margin-left: -36px;
+	}
+
+	.main-distance {
+    margin: 0 -284px 57px 0;
+	}
+
+	.links {
+    margin: 210px -136px 0 -194px;
+	}
+}
+
+@media(max-width: 581px) {
+	.upper__title, .lower__title, .lower__protection {
+    font: 600 24px/37px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.main__subtitle, .upper__subtitle, .lower__subtitle {
+    font: 500 12px/18px Montserrat-Medium, arial, helvetica, sans-serif;
+	}
+
+	.upper__subtitle {
+    width: 260px;
+	}
+
+	.full-protection {
+    margin: 47% 0 0 -46%;
+	}
+
+  .char {
+  	margin-left: -20%;
+  }
+
+  .upper, .lower {
+    margin-left: -34px;
+	}
+
+	.description__link {
+    font: 700 12px/19px Montserrat-Bold, arial, helvetica, sans-serif;
+	}
+
+	.description__button {
+    font: 700 12px/19px Montserrat-Bold, arial, helvetica, sans-serif;
+    margin-left: 30px;
+    padding: 10px 53px;
+	}
+
+	.upper__title, .upper__subtitle, .lower__title, .lower__subtitle {
+		padding-left: 10px;
+	}
+
+	.protection {
+		font: 700 12px/20px Montserrat-Bold, arial, helvetica, sans-serif;
+		margin: 0px 0 89px 301px;;
+	}
+
+	.lower__protection {
+		margin: -268px 0 6px 301px;
+	}
+
+	.lower {
+		height: 500px;
+	}
+
+	.protection__item::after {
+		background-size: 17%;
+	}
+
+	.img-title__up {
+    left: 41%;
+	}
+}
+
+@media(max-width: 563px) {
+	.full-protection {
+		margin: 49% 0 0 -47%;
+	}
+}
+
+@media(max-width: 542px) {
+	.main__pros {
+		margin: -276px 0 0 -57px;
+	}
+
+	.main__red-car {
+    background-size: 430px;
+    background-position: 50% 16%;
+	}
+
+	.main__title {
+		margin: 0;
+	}
+
+	.links {
+    margin: 210px -143px 0 -185px;
+	}
+
+	.protection__item::after {
+		background: url(img/Screenshot_2.png) no-repeat;
+		width: 200px;
+		height: 25px;
+		background-position: right;
+	}
+
+	.char {
+    margin-left: -24%;
+	}
+
+	.display__number, .space__number {
+    font: 600 23px/43px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.display__subtitle, .functionality__subtitle, .space__subtitle {
+    font: 400 10px/15px Montserrat-Regular, arial, helvetica, sans-serif;
+	}
+
+	.functionality__title {
+    font: 600 16px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.display::before {
+    background-repeat: no-repeat;
+    background-size: 27px;
+    left: 12px;
+	}
+
+	.functionality::before {
+    background-repeat: no-repeat;
+    background-size: 39px;
+    top: 39px;
+    left: 7px;
+	}
+
+	.space::before {
+    background-repeat: no-repeat;
+    background-size: 27px;
+    left: 13px;
+	}
+
+	.char {
+    margin-top: 33px;
+	}
+
+	.description-first, .description-second {
+		padding-left: 25%;
+	}
+
+	.description-first::before, .description-second::before {
+		left: 92px;
+	}
+
+	.functionality {
+    width: 137px;
+	}
+}
+
+@media(max-width: 539px) {
+	.full-protection {
+    margin: 53% 0 0 -50%;
+	}
+}
+
+@media(max-width: 500px) {
+	.char {
+    margin-left: -28%;
+	}
+
+	.upper__title, .lower__title, .lower__protection {
+    font: 600 21px/33px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.lower__protection {
+    margin: -260px 0 14px 285px;
+	}
+
+	.protection {
+    font: 700 10px/20px Montserrat-Bold, arial, helvetica, sans-serif;
+    margin: 0 0 89px 285px;
+	}
+
+	.img-title__up {
+    font: 600 58px/85px Montserrat-SemiBold, arial, helvetica, sans-serif;
+  }
+
+  .description-first::before, .description-second::before {
+    left: 93px;
+    top: -3px;
+    background-size: 24px;
+    background-repeat: no-repeat;
+	}
+}
+
+@media(max-width: 476px) {
+	.header {
+    margin: 0 0 58px 20px;
+	}
+
+	.char {
+    margin-left: -33%;
+    width: 100%;
+	}
+
+	.protection__item_dop {
+    font: 700 5px/12px Montserrat-Bold, arial, helvetica, sans-serif;
+	}
+
+	.lower__protection {
+    margin: -257px 0 31px 270px;
+	}
+}
+
+@media(max-width: 471px) {
+	.lower__protection {
+    margin: -249px 0 10px 270px;
+	}
+
+	.protection {
+		margin: 0 0 89px 272px;
+	}
+}
+
+@media(max-width: 463px) {
+	.char {
+		margin-left: -36%;
+	}
+}
+
+@media(max-width: 458px) {
+	.links {
+		margin: 210px -136px 0 -170px;
+	}
+
+	.main__title {
+    font: 600 72px/97px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.main__subtitle {
+		font: 500 14px/18px Montserrat-Medium, arial, helvetica, sans-serif;
+	}
+
+	.main-speed__subtitle {
+    margin: 27px 0 0 -61px;
+	}
+
+	.main-speed__number {
+		font: 600 43px/61px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.main-distance__number {
+    font: 600 43px/60px Montserrat-SemiBold, arial, helvetica, sans-serif;
+  }
+
+  .main-distance__subtitle {
+    margin: 55px -25px 17px -75px;
+	}
+
+	.main-button {
+    font: 700 14px/16px Montserrat-Bold, arial, helvetica, sans-serif;
+    width: 192px;
+    height: 46px;
+    margin: -33px 25px 0 17px;
+  }
+}
+
+@media(max-width: 443px) {
+	.upper__subtitle {
+    width: 216px;
+	}
+
+	.char {
+    margin-left: -42%;
+	}
+
+	.full-protection {
+    margin: 57% 0 0 -53%;
+	}
+
+	.description-first, .description-second {
+    padding-left: 22%;
+  }
+
+  .description-first::before, .description-second::before {
+    left: 71px;
+  }  
+}
+
+@media(max-width: 440px) {
+	.display::before {
+    background-size: 23px;
+	}
+
+	.functionality::before {
+    background-size: 30px;
+    top: 33px;
+    left: 10px;
+	}
+
+	.functionality {
+		width: 103px;
+	}
+
+	.space::before {
+    background-size: 22px;
+    left: 14px;
+	}
+
+	.display__text, .space__text {
+    padding-left: 4px;
+    font: 600 13px/24px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.functionality__title {
+    font: 600 12px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	  margin-bottom: -5px;
+	}
+
+	.display {
+    margin: -292px 0 27px 420px;
+	}
+
+	.space__subtitle {
+		width: 90px;
+	}
+
+	.description-first, .description-second {
+    padding-left: 19%;
+	}
+
+	.description-first::before, .description-second::before {
+    left: 53px;
+	}	
+
+	.lower__subtitle {
+    width: 87%;
+    font: 500 9px/18px Montserrat-Medium, arial, helvetica, sans-serif;
+	}
+
+	.lower__protection {
+    margin: -257px 0 10px 270px;
+	}
+
+	.protection {
+    font: 700 8px/20px Montserrat-Bold, arial, helvetica, sans-serif;
+  }
+
+  .protection__item {
+    margin-left: -37px;
+	}
+
+	.upper__title, .lower__title, .lower__protection {
+    font: 600 18px/33px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.lower__protection {
+    margin: -257px 0 10px 234px;
+	}
+
+	.full-protection {
+    margin: 60% 0 0 -46%;
+	}
+}
+
+@media(max-width: 425px) {
+	.main__title {
+    font: 600 75px/110px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.main__subtitle {
+		font: 500 13px/18px Montserrat-Medium, arial, helvetica, sans-serif;
+		margin: -18px 0 0 0;
+	}
+
+	.main__red-car {
+    background-size: 370px;
+	}
+
+	.speed-img {
+		background: url(img/speed-mobile.svg) no-repeat;
+		background-position: 50% 15%;
+	}
+
+	.main-speed__number {
+    font: 600 27px/33px Montserrat-SemiBold, arial, helvetica, sans-serif;
+    margin: -51px 0 0 -22px;
+  }
+
+  .main-speed__text {
+    font: 600 15px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
+    margin: 10px 0 0 3px;
+  }
+
+  .main-speed__subtitle {
+    font: 400 10px/12px Montserrat-Regular, arial, helvetica, sans-serif;
+    margin: -2px 0 0 -38px;
+	}
+
+	.distance-img {
+		background: url(img/distance-mobile.svg) no-repeat;
+		margin: 33px 0 0 0;
+	}
+
+	.main-distance__number {
+		font: 600 27px/33px Montserrat-SemiBold, arial, helvetica, sans-serif;
+		margin: -40px 0 0 -34px;
+	}
+
+	.main-distance__text {
+		font: 600 15px/18px Montserrat-SemiBold, arial, helvetica, sans-serif;
+		margin: 7px 0 0 3px;
+	}
+
+	.main-distance__subtitle {
+		font: 400 10px/12px Montserrat-Regular, arial, helvetica, sans-serif;
+		margin: 22px -25px 17px -47px;
+	}
+
+	.links {
+    margin: 152px -112px 0 -158px;
+	}
+
+	.main-button {
+    font: 700 13px/18px Montserrat-Bold, arial, helvetica, sans-serif;
+    width: 148px;
+    height: 35px;
+    margin: -45px 0px 0 36px;
+  }
+
+	.test-drive {
+		background: url(img/test-mobile.svg) no-repeat;
+		margin: -2px 0 0px 84px;
+		background-position-x: 25px;
+	}
+
+	.main-speed {
+    margin: 21px 0 44px -60px;
+  }
+
+  .main-distance {
+    margin: 24px -227px 57px 0;
+    width: 76px;
+	}
+
+	.arrow {
+    margin-top: -12px;
+	}
+
+	.upper__subtitle {
+    width: 179px;
+    font: 500 9px/18px Montserrat-Medium, arial, helvetica, sans-serif;
+	}
+
+	.char {
+    margin-left: -44%;
+	}
+}
+
+@media(max-width: 400px) {
+	.char {
+    margin-left: -50%;
+	}
+
+	.main-distance__subtitle {
+		width: 61px;
+	}
+
+	.img-title__up {
+    font: 600 46px/85px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.description__link {
+    font: 700 9px/19px Montserrat-Bold, arial, helvetica, sans-serif;
+	}
+
+	.description__button {
+    font: 700 9px/19px Montserrat-Bold, arial, helvetica, sans-serif;
+    margin-left: 55px;
+    padding: 6px 28px;
+	}
+
+	.description-first, .description-second {
+    padding-left: 21%;
+	}
+
+	.description-first::before, .description-second::before {
+    left: 59px;
+    top: 1px;
+    background-size: 20px;
+	}
+
+	.protection__item::after {
+		background-size: 77px;
+	}
+
+	.full-protection {
+    margin: 65% 0 0 -50%;
+	}
+}
+
+@media(max-width: 385px) {
+	.links {
+    margin: 152px -112px 0 -135px;
+	}
+
+	.main-button {
+		margin: -45px 0px 0 12px;
+	}
+
+	.char {
+    margin-left: -55%;
+	}
+}
+
+@media(max-width: 375px) {
+	.header {
+		margin: 0 0 58px 26px;
+	}
+
+	.main-distance {
+		width: 97px;
+	}
+
+	.btn {
+    left: -21px;
+    top: -23px;
+    width: 24px;
+	}
+
+	.btn > span, .btn > span::after, .btn > span::before {
+		height: 2px;
+	}
+
+	.btn > span::before {
+    top: -7px;
+	}
+
+	.btn > span::after {
+    top: 7px;
+	}
+
+	.logo {
+		background: url(img/logo-mobile.svg) no-repeat;
+		background-position: 0% -20%;
+    margin: 0 0 0 -24px;
+	}
+
+	.main__title {
+    font: 600 50px/61px Montserrat-SemiBold, arial, helvetica, sans-serif;
+    margin-top: -55px;
+  }
+
+  .main__subtitle {
+    font: 500 10px/12px Montserrat-Medium, arial, helvetica, sans-serif;
+    margin: -3px 0 0 0;
+	}
+
+	.main {
+		background: url(img/Tesla-mobile.svg) no-repeat;
+		background-size: contain;
+    background-position-y: 7%;
+	}
+
+	.main__red-car {
+		background: url(img/car-mobile.svg) no-repeat;
+		background-size: 95%;
+    background-position: 50% 17%;
+	}
+
+	.main__pros {
+    margin: -273px 0 0 -36px;
+	}
+
+	.main-speed {
+		margin: 13px 0 44px -67px;
+	}
+
+	.speed-img {
+		background-position: 45% 15%;
+	}
+
+	.main-speed__number {
+		margin: -54px 0 0 -22px;
+	}
+
+	.main-speed__text {
+		margin: 12px 0 0 9px;
+	}
+
+	.main-speed__subtitle {
+		margin: -10px 0 0 -38px;
+	}
+
+	.main-distance {
+    margin: 2px -233px 45px 0;
+	}
+
+	.distance-img {
+    margin: 26px 0 0 -4px;
+	}
+
+	.main-distance__number {
+    margin: -42px 0 0 -30px;
+	}
+
+	.main-distance__text{
+		margin: 12px 0 0 8px;
+	}
+
+	.main-distance__subtitle {
+    margin: 20px -25px 17px -47px;
+	}
+
+	.links {
+  	margin: 138px -80px 0 -125px;
+	}
+
+	.test-drive {
+		margin: -2px -43px 0px 84px;
+	}
+
+	.main-button {
+		width: 155px;
+    height: 35px;
+    margin: -43px 0px 0 31px;
+	}
+
+	.arrow {
+		margin-top: -14px;
+	  margin-left: 3px;
+	}
+
+	.img-title__up {
+		display: none;
+	}
+
+	.description-up {
+		background: url(img/salonmob.svg);
+		width: 100%;
+		height: 323px;
+		background-position-y: -2px;
+	}
+
+	.upper {
+		margin-top: 86%;
+		padding: 0 0 0 50px;
+		height: 304px;
+	}
+
+	.upper__title {
+		margin: 18px 0 0 0;
+		font: 600 30px/37px Montserrat-SemiBold, arial, helvetica, sans-serif;
+	}
+
+	.upper__subtitle {
+		margin-top: 11px;
+		font: 500 15px/18px Montserrat-Medium, arial, helvetica, sans-serif;
+		width: 304px;
+		padding-left: 11px;
+	}
+
+	.display, .functionality, .space, .description-first, .lower__protection, .protection, .description-second {
+		display: none;
+	}
+
+	.description-low {
+		background: url(img/carlowmob.svg) no-repeat;
+		width: 100%;
+		height: 300px;
+		margin-top: 96%;
+	}
+
+	.img-title__low {
+		background: url(img/ModelSmob.svg) no-repeat;
+		width: 100%;
+		height: 100px;
+		top: -9px;
+		position: absolute;
+	}
+
+   .lower {
+    margin-top: 238px;
+    padding: 0 0 0 55px;
+    height: 303px;
+  }
+
+  .lower__title {
+  	width: 90%;
+  	margin-left: 0;
+  	margin-top: 18px;
+  	font: 600 30px/37px Montserrat-SemiBold, arial, helvetica, sans-serif;
+  }
+
+  .lower__subtitle {
+  	font: 500 15px/18px Montserrat-Medium, arial, helvetica, sans-serif;
+		width: 320px;
+		margin-left: 0;
+  }
+}
+
+@media(max-width: 334px) {
+	.links {
+    margin: 103px -97px 0 -123px;
+	}
+
+	.test-drive {
+		background-size: 100px;
+    background-position-x: 8px;
+	}
+
+	.main-button {
+    font: 700 11px/9px Montserrat-Bold, arial, helvetica, sans-serif;
+    width: 143px;
+    height: 29px;
+    margin: -43px 0px 0 18px;
+  }
+}
+
+@media(max-width: 284px) {
+	.test-drive {
+		background-size: 98px;
+    background-position-x: 22px;
+	}
+
+	.arrow {
+		margin-left: 27px;
+		background-size: 22px;
+	}
+}
+
+@media(min-width: 1600px) {
+	.model {
+    margin-right: 241px;
+	}
+
+	.btn {
+		left: 982px;
+	}
+  
+	.upper {
+		margin-left: 1149px;
+	}
+}
+
+@media(min-width: 1750px) {
+	.model {
+    margin-right: 302px;
+	}
+
+	.btn {
+    left: 1032px;
+  }
+
+  .main-distance {
+    margin: 0 0 0 -200px;
+	}
+
+	.description-up {
+    width: 100%;
+    background-size: 77%;
+	}
+
+	.img {
+    width: 100%;
+    height: 876px;
+    background-position: 336px 50px;
+    background-size: 79%;
+	}
+
+	.upper {
+    margin-left: 77%;
+  }
+
+  .whs {
+  	right: 8px;
+  }
+}
+
+@media(min-width: 1920px) {
+	.model {
+    margin-right: 365px;
+	}
+
+	.btn {
+		left: 1098px;
+	}
+
+	.main-distance {
+  	margin: 0 0 0 -324px;
+	}
+
+	.description-up {
+    width: 1920px;
+    background-position-y: 99%;
+    background-size: 1470px;
+	}
+
+	.description-low {
+		width: 1920px
+	}
+
+	.upper {
+    width: 401px;
+    height: 876px;
+    margin-left: 1467px;
+  }
+
+  .img-title__low {
+  	left: 1000px;
+  }
+
+  .img {
+  	width: 1700px;
+  	background-position: 398px 123px;
+  }
+
+  .whs {
+    right: 29px;
+	}
+}
+
 
 
 
