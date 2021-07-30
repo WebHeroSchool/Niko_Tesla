@@ -333,7 +333,7 @@ body {
 /*///////////////////2 секция//////////////////////*/
 .description-up {
 	background: url(img/salon.svg) no-repeat;
-	width: 1440px;
+	width: 100%;
 	height: 935px;
 	background-position-y: 100%;
 	position: relative;
@@ -1167,6 +1167,16 @@ body {
 	}
 }
 
+@media(max-width: 610px) {
+	.upper, .lower {
+		margin-left: -34px;
+	}
+
+	.protection__item {
+    margin-left: -31px;
+	}
+}
+
 @media(max-width: 600px) {
 	.upper, .lower {
     margin-left: -34px;
@@ -1437,6 +1447,14 @@ body {
 		margin: 210px -136px 0 -170px;
 	}
 
+	.description-up {
+		height: 821px;
+	}
+
+	.description-low {
+		background-position-y: 167px;
+	}
+
 	.main__title {
     font: 600 72px/97px Montserrat-SemiBold, arial, helvetica, sans-serif;
 	}
@@ -1701,6 +1719,18 @@ body {
 	.full-protection {
     margin: 65% 0 0 -50%;
 	}
+
+	.img-title__low {
+		top: 225px;
+	}
+
+	.description-low {
+    background-position-y: 255px;
+	}
+
+	.description-up {
+    height: 642px;
+	}
 }
 
 @media(max-width: 385px) {
@@ -1933,6 +1963,12 @@ body {
 	}
 }
 
+@media(min-width: 1441px) {
+	.upper {
+		margin-left: 72%;
+	}
+}
+
 @media(min-width: 1600px) {
 	.model {
     margin-right: 241px;
@@ -1943,7 +1979,14 @@ body {
 	}
   
 	.upper {
-		margin-left: 1149px;
+		margin-left: 75%;
+	}
+
+	.img {
+    width: 100%;
+    height: 96%;
+    background-position: 411px 171px;
+    background-size: 72%;
 	}
 }
 
